@@ -7,7 +7,7 @@ class CryptoTable extends Component {
          transactions: [
             { id: 1, coin: "BTC/DOGE",   seller: "x5252906", buyer: "x2014509"},
             { id: 2, coin: "ETHER/IOTA", seller: "x2586209", buyer: "x2586082"},
-            { id: 3, coin: "IOTA/BTC",   seller: "x5252096", buyer: "x0081901"},
+            { id: 3, coin: "IOTA/BTC",   seller: "x5252096", buyer: "x0081901"}
          ]
       }
    }
@@ -16,6 +16,7 @@ class CryptoTable extends Component {
        const { id, coin, seller, buyer } = transaction
        return (
           <tr key={id}>
+             <td>{id}</td>
              <td>{coin}</td>
              <td>{seller}</td>
              <td>{buyer}</td>
