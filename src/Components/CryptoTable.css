@@ -12,6 +12,10 @@
   padding: 8px;
 }
 
+.transactions tr:nth-child(0) {
+  display: none;
+}
+
 .transactions tr:nth-child(even) {
   background-color: #f2f2f2;
 }
