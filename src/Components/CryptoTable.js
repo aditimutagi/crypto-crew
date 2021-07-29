@@ -24,7 +24,7 @@ class CryptoTable extends Component {
     })
  }
   renderTableHeader() {
-    let header = Object.keys(this.state.transactions[1])
+    let header = Object.keys(this.state.transactions[0])
     return header.map((key, index) => {
       return <th key={index}>{key.toUpperCase()}</th>
     })
