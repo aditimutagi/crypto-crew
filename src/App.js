@@ -13,10 +13,9 @@ function App() {
           <p>simulation here</p>
           <button>Simulate Attack</button>
         </div>
-        <div className="crypto-table-container">
+        <div className="App-divider"/>
           <p>Crypto transactions here</p>
           <CryptoTable/>
-        </div>
       </body>
       <footer className="App-footer">
 

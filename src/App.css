@@ -5,7 +5,6 @@
 
 .App-header {
   height: 150px;
-  width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -16,13 +15,18 @@
 }
 
 .App-body {
-  width: 80vw;
+  text-align: center;
+  width: 800px;
   margin: 0 auto;
-  display: flex;
   min-height: calc(100vh - 140px);
+}
+.App-divider {
+  width: 800px;
+  height: 20px;
 }
 
 .graph-container {
+  background-color: #afb8c9;
   height: 600px;
   width: 800px;
   display: flex;
@@ -30,10 +34,10 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #ffffff;
 }
 
 .crypto-table-container {
+  background-color: #95b6fa;
   height: 600px;
   width: 800px;
   display: flex;
@@ -41,16 +45,25 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #8fb7ec;
 }
 
 .App-footer {
-  height: 40px;
-  line-height: 38px;
-  width: 80vw;
-  margin: 0 auto;
   text-align: center;
-  box-sizing: border-box;
+  width: 800px;
+  margin: 0 auto;
+  height: 40px;
+  background: #282c34;
+  line-height: 38px;
   color: white;
-  background-color: #282c34;
+  border-top: 2px solid white;
+  box-sizing: border-box;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
