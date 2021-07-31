@@ -24,17 +24,27 @@
   min-height: calc(100vh - 140px);
 }
 .App-divider {
-  width: 800px;
-  height: 40px;
+  width: 840px;
+  height: 20px;
 }
 
-.graph-container {
-  height: 500px;
-  width: 800px;
-  display: flex;
+.simulator-container {
+  height: 400px;
+  width: 600px;
+  display: inline-block;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  color: white;
+}
+
+.currency {
+  height: 100px;
+  width: 180px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #ddd;
+  padding: 5px;
 }
 
 .App-footer {

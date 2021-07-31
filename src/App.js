@@ -1,5 +1,5 @@
 import './App.css';
-//import BehaviorGraph from './Components/BehaviorGraph';
+import AttackSimulator from './Components/AttackSimulator';
 import CryptoTable from './Components/CryptoTable';
 
 function App() {
@@ -9,13 +9,22 @@ function App() {
         <h1>Crypto Crew</h1>
       </header>
       <body className="App-body">
-        <div className="graph-container">
-          <p>simulation here</p>
-          <button>Simulate Attack</button>
+        <div className="App-divider"/>
+        <div>
+          <div className="simulator-container">
+            <AttackSimulator/>
+            <button className="simulator-button">
+              Simulate Attack
+            </button>
+          </div>
+            <div className="currency">
+              <b>Total Cryptocurrency</b>
+              <p>Currency Amount</p>
+          </div>
         </div>
         <div className="App-divider"/>
-          <p>Crypto transactions here</p>
-          <CryptoTable/>
+        <h3>CryptoCurrency Transactions</h3>
+        <CryptoTable/>
       </body>
       <footer className="App-footer">
 
