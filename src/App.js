@@ -2,6 +2,9 @@ import './App.css';
 import AttackSimulator from './Components/AttackSimulator';
 import CryptoTable from './Components/CryptoTable';
 
+
+//"Currency amount" needs to take data from our attack simulator, reflect the activity
+//simulator is not up yet
 function App() {
   return (
     <div className="App">
