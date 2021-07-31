@@ -26,7 +26,7 @@ function App() {
           </div>
         </div>
         <div className="App-divider"/>
-        <h3>CryptoCurrency Transactions</h3>
+        <h3>Cryptocurrency Transactions</h3>
         <CryptoTable/>
       </body>
       <footer className="App-footer">
