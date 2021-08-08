@@ -1,0 +1,28 @@
+type Pool
+  @model { #Liquidity pool
+  id: ID!
+  name: String!
+  coins: [Coin] @connection(keyName: "byPool", fields: ["id"])
+}
+
+type Coin
+  @model
+  @key(name: "byPool", fields: ["poolID"]) { #Coins
+  id: ID!
+  title: String!
+  poolID: ID!
+  pool: Pool @connection(fields: ["poolID"])
+  wallets: [Wallet] @connection(keyName: "byCoin", fields: ["id"])
+}
+
+type Wallet
+  @model
+  @key(name: "byCoin", fields: ["coinID", "content"]) { #each wallet
+  id: ID!
+  coinID: ID!
+  coin: Coin @connection(fields: ["coinID"])
+  content: String!
+}
+
+#Schema design
+#
