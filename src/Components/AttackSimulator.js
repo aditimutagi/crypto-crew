@@ -4,11 +4,13 @@ import LineChart from 'react-linechart';
 import '../../node_modules/react-linechart/dist/styles.css';
 
 //our attack simulator comes here; currently, we have a mockup of what we are going to build
+//simulator will happen as a user clicks simulate
 //No need to use currently imported Linechart library
 class AttackSimulator extends Component  {
     render() {
         const data = [
-            {//placeholder data
+            // Placeholder; this part will connected to our algorithm (both attack & defense)
+            {
                 name: "BTC",						
                 color: "steelblue", 
                 points: [{x: 1, y: 2}, {x: 2, y: 3}, {x: 3, y: 4}, {x: 4, y: 0}, {x: 5, y: -0.4}] 

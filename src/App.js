@@ -6,6 +6,10 @@ import CryptoTable from './Components/CryptoTable';
 //"Currency amount" needs to take data from our attack simulator, reflect the activity
 //simulator is not up yet
 function App() {
+  function attack() {
+    alert('attack button clicked');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +20,7 @@ function App() {
         <div>
           <div className="simulator-container">
             <AttackSimulator/>
-            <button className="simulator-button">
+            <button className="simulator-button" onClick={attack}>
               Simulate Attack
             </button>
           </div>
