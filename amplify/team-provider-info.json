@@ -10,6 +10,14 @@
       "StackName": "amplify-amplifybb9c0ae2b54d4-staging-190813",
       "StackId": "arn:aws:cloudformation:us-east-1:547676914064:stack/amplify-amplifybb9c0ae2b54d4-staging-190813/7d4c3ae0-f169-11eb-8088-0e72707fff19",
       "AmplifyAppId": "d287xlybqvld0g"
+    },
+    "categories": {
+      "function": {
+        "dynamo95fb3570Trigger2ea7f21e": {
+          "deploymentBucketName": "amplify-amplifybb9c0ae2b54d4-staging-190813-deployment",
+          "s3Key": "amplify-builds/dynamo95fb3570Trigger2ea7f21e-6978666a52427879594a-build.zip"
+        }
+      }
     }
   }
 }
